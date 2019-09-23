@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Quotes with "<%= @search_string%>"</h1>
+
+<%= render :partial =>'layouts/table', locals: {quotes: @quotes} %>
+<br>
+

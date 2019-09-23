@@ -1,0 +1,24 @@
+es:
+  search: Buscar
+  luck: Voy a tener suerte
+  categories: Categorías
+  last_searches: Últimas búsquedas
+  search_of: Búsqueda de %{search}
+  value: Valor
+  send_by_email: Envia esto por correo
+  first: Primera
+  last: Última
+  next: Siguiente
+  previous: Anterior
+  showing_page: Mostrando página
+  zeroRecords: No hay datos para mostrar
+  of: de
+  send: Enviar
+  select_a_category: Selecciona una categoria
+  sent_email: Correo electronico enviado a %{email}
+  missing_search_param: Falta un parámetro para buscar
+  email_form:
+    welcome: Chuck sabe que este es tu correo
+    search: Esta es el resultado para la búsqueda de
+    thanks: ¡Gracias por tu visitarnos, que tengas un gran dia!
+    subject: ¡Chuck va a tu correo!

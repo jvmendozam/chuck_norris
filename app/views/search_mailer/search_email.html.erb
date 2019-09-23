@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+  </head>
+  <body>
+    <h1><%= t('email_form.welcome') %>, <%= @email %></h1>
+    <p>
+      <h2><%= t('email_form.search') %> "<%= @search.value %>".</h2>
+    </p>
+    <p>
+      <%= render :partial => 'layouts/table', locals: {quotes: @quotes} %>
+    </p>
+
+    <p>
+      <h3><%= t('email_form.thanks') %></h3>
+    </p>
+  </body>
+</html>

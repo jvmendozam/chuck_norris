@@ -1,0 +1,36 @@
+<table id="dttb" class="table table-hover">
+  <thead>
+  <tr>
+    <th>#</th>
+    <th><%=t("value")%></th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% quotes.each_with_index do |quote, index| %>
+    <% quote = OpenStruct.new(quote) %>
+    <tr>
+      <td><%= index +1  %></td>
+      <td><%= quote.value %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+
+<script>
+    $(document).ready(function() {
+        $('#dttb').dataTable({
+            "language": {
+                "zeroRecords": "<%= t("zeroRecords")%>",
+                "info": "<%= t("showing_page")%>" + " _PAGE_ " + "<%=t("of")%>" +" _PAGES_ ",
+                "paginate": {
+                    "previous":" <%= t("previous") %>",
+                    "first": "<%= t("first") %>",
+                    "next": "<%= t("next") %>",
+                    "last":" <%= t("last") %>",
+                }
+            }
+        });
+    });
+</script>

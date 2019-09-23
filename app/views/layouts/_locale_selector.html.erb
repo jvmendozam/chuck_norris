@@ -1,0 +1,18 @@
+<ul class="nav navbar-nav">
+  <li class="off-right">
+
+    <a href="javascript:;" data-toggle="dropdown">
+      <img src="/assets/flags/<%= params['locale'] %>.png" alt="locale" title="locale">
+      <i class="ti-angle-down ti-caret hidden-xs"></i>
+    </a>
+    <ul class="dropdown-menu animated fadeInRight">
+      <% %w(es en).each do |l| %>
+          <li <%= 'style = "background: beige"'.html_safe if l.to_sym == I18n.locale %>>
+            <%= link_to({:locale => l}) do %>
+                <img src="/assets/flags/<%= l %>.png" alt="locale" title="locale"> <%= (I18nData.languages(I18n.locale)[l.to_s.upcase]).titleize %>
+            <% end %>
+          </li>
+      <% end %>
+    </ul>
+  </li>
+</ul>

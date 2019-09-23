@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+<section>
+  <div class="result-header">
+    <div class="row">
+      <div class="col-10">
+        <%= t("search_of", search: @search.value) %>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <b><%= t("last_searches")%></b>
+    <br>
+    <ul>
+      <% Search.order(created_at: :desc).first(20).each_with_index do |search, index| %>
+        <li><%= "#{index + 1} : #{search.value} " %></li>
+      <% end %>
+    </ul>
+  </nav>
+  <article>
+    <%= render :partial => 'layouts/table', locals: {quotes: @quotes} %>
+  </article>
+</section>
+<br><br><br>
+<footer>
+  <%= render :partial => 'layouts/footer' %>
+</footer>

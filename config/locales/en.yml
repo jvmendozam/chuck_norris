@@ -1,0 +1,24 @@
+en:
+  search: Search
+  luck: I'm lucky
+  categories: Categories
+  last_searches: Last Searches
+  search_of: Search of %{search}
+  value: Value
+  send_by_email: Send by email
+  first: First
+  last: Last
+  next: Next
+  previous: Previus
+  showing_page: Showing page
+  zeroRecords: No data to display
+  of: of
+  send: Send
+  select_a_category: Select a category
+  sent_email: Sent email to %{email}
+  missing_search_param: Missing search param
+  email_form:
+    welcome: Chuck knows this is your email
+    search: This is the result for the search for
+    thanks: Thanks for joining and have a great day!
+    subject: Chuck goes to your mail!
