@@ -4,10 +4,11 @@ class SearchesController < ApplicationController
   include Concerns::Transformable
   require 'securerandom'
 
+  before_action :prevent_nil_at_refresh, only: [:index]
+
   BASE_URL = 'https://api.chucknorris.io/jokes'
 
   def index
-   redirect_to root_path unless @search.present?
   end
 
   def index_categories
@@ -85,6 +86,10 @@ class SearchesController < ApplicationController
   end
 
   private
+
+  def prevent_nil_at_refresh
+    redirect_to root_path unless @search.present?
+  end
 
   # Use callbacks to share common setup or constraints between actions.
   def set_search
