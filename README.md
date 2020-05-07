@@ -45,7 +45,6 @@ The solution was made in a creative way. Is a **quality** code and uses modules 
 
 - Missing display test
 - Instead of saving each sentence one by one in the search, consider saving a file with all the phrases.
-- **Be considered for this job** :D
 
 ## About
 
